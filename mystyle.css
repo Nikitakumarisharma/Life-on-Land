@@ -1,0 +1,29 @@
+.inner-section{
+   
+    margin-left: 100px;
+    margin-right: 100px;
+    max-width: 90%;
+    box-shadow: 0 0 11px;
+    
+}
+h2{ color: blue;
+    text-align: center;
+}
+.picture{
+    max-width: 90%;
+    margin: 30px;
+    
+}
+.donate{
+   display: block;
+   margin: auto;
+   margin-bottom: 100px;
+
+   width: 150px;
+}
+
+.inner-post{
+    padding: 8%;
+max-width: 80%;
+
+}
