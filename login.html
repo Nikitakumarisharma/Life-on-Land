@@ -1,35 +1,55 @@
+<!--Login page...-->
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="login.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body>
-  <div id="navbar"></div>
-  
-  <div class="wrapper">
-    <div class="login-container">
+<html>
+    <head>
+        <link rel="stylesheet" href="home.page.css">
+    </head>
+    <body class="login">
+        <header class="header">
+          <nav >
+            <ul class="list">
+              <li >
+                <a class="item" href="">logo</a>
+              </li>
+              <li>
+                <a href="home.page.html">home</a> </li>
+              <li>
+                <a href="">about</a>
+              </li>
+              <li>
+                <a href="">fnq</a>
+              </li>
+              <li>
+                <a href="">ngo & communities</a>
+              </li>
+              <li>
+                <a href="">contact</a>
+              </li>
+              <li>
+                <a href="login.html"> login</a>
+              </li>
+            </ul>
+          </nav>
+          </header>
+          
         <form>
             <h3>Login Here</h3>
-
+    
             <label for="username">Username</label>
             <input type="text" placeholder="Email or Phone" id="username">
-
+    
             <label for="password">Password</label>
             <input type="password" placeholder="Password" id="password">
-
+    
             <button>Log In</button>
             <div class="social">
-                <div class="go"><i class="fab fa-google"></i>  Google</div>
-                <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+              <div class="go"><i class="fab fa-google"></i>  Google</div>
+              <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
             </div>
         </form>
-    </div>
-  </div>
-
-  <script src="navbar.js"></script>
-</body>
+        <footer class="login-footer">
+          this is footer
+        </footer>
+    </body>
 </html>
