@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background: linear-gradient(135deg, #55addf, #46df98); Gradient from blue to green */
+    /* background-color: #f0f2f5; */
+    /* margin: 0; */
+  }
+  
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Applying fade-in animation to .intro */
+  .intro {
+    color: white;
+    margin: 10px;
+    padding: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: 500px;
+    border: solid black;
+    background: linear-gradient(135deg, #55addf, #46df98); /* Gradient from blue to green */
+    animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+  }
+  
+  /* Applying fade-in animation to .about */
+  .about {
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+    background: linear-gradient(135deg, #55addf, #46df98); /* Gradient from blue to green */
+    animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+  }
+  
+  #r3 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 40px;
+    animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+  }
+  
+  .r2, .r1 {
+    margin-top: 30px;
+    padding: 30px;
+    display: inline-flex;
+    animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+  }
+  
+  .img {
+    height: 170px;
+    width: 70px;
+  }
+  
+  /* Override p-5 padding for navbar specifically */
+  nav.p-5 {
+    padding: 20px !important;
+  }
+  
+  /* Wrapper class */
+  .wrapper {
+    /* background-image: url(bg.jpeg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    /* Optional fade-in effect for the wrapper if needed */
+    animation: fadeIn 1s ease-in-out; /* Apply fade-in animation */
+  }
+  

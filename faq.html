@@ -5,7 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ Section</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <style>
+        /* Add this CSS rule to your stylesheet */
+        .faq-section {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+            background: linear-gradient(135deg, #55addf, #46df98); /* Gradient from blue to green */
+
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .heading {
+            color: white;
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
     <!-- navbar include -->
@@ -13,11 +36,11 @@
 
     <div class="grid lg:grid-cols-1 grid-cols-1 gap-8 lg:gap-16 py-8 lg:py-24 px-8 lg:px-24 bg font-normal">
         <!-- FAQ Sections Container -->
-        <div id="faq-sections" class="flex flex-col gap-8 ">
+        <div id="faq-sections" class="flex flex-col gap-8">
             <!-- Sections will be dynamically added here -->
         </div>
     </div>
-
+    
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const faqSections = [
@@ -62,20 +85,92 @@
                     ]
                 },
                 {
-                    heading: "Landslides example",
-                    subheading: "Find out more about landslides and their impact.",
+                    heading: "Climate change",
+                    subheading: "Find out more about climate change and its impact.",
                     faqs: [
                         {
-                            question: "What causes landslides?",
-                            answer: "Landslides can be caused by various factors including heavy rainfall, volcanic activity, earthquakes, and human activities such as mining and deforestation.",
+                            question: "What causes climate change?",
+                            answer: "Climate change is caused by various factors including greenhouse gas emissions, deforestation, and industrial activities.",
                         },
                         {
-                            question: "How can we prevent landslides?",
-                            answer: "Preventive measures include proper land use planning, slope stabilization techniques, and afforestation. Early warning systems can also help mitigate the impact of landslides.",
+                            question: "How can we combat climate change?",
+                            answer: "Combating climate change involves reducing greenhouse gas emissions, adopting renewable energy sources, and implementing sustainable practices.",
                         },
                         {
-                            question: "How can we prevent landslides?",
-                            answer: "Preventive measures include proper land use planning, slope stabilization techniques, and afforestation. Early warning systems can also help mitigate the impact of landslides.",
+                            question: "What are the effects of climate change?",
+                            answer: "Effects of climate change include rising temperatures, melting ice caps, and increased frequency of extreme weather events.",
+                        }
+                    ]
+                },
+                {
+                    heading: "Pollution",
+                    subheading: "Find out more about pollution and its effects.",
+                    faqs: [
+                        {
+                            question: "What causes pollution?",
+                            answer: "Pollution can be caused by industrial emissions, vehicle exhaust, and improper waste disposal.",
+                        },
+                        {
+                            question: "How can we reduce pollution?",
+                            answer: "Reducing pollution involves adopting cleaner technologies, improving waste management, and promoting environmental regulations.",
+                        },
+                        {
+                            question: "What are the health impacts of pollution?",
+                            answer: "Pollution can lead to respiratory issues, cardiovascular diseases, and other health problems.",
+                        }
+                    ]
+                },
+                {
+                    heading: "Mountain Ecosystem Degradation",
+                    subheading: "Find out more about mountain ecosystem degradation.",
+                    faqs: [
+                        {
+                            question: "What causes mountain ecosystem degradation?",
+                            answer: "Degradation can be caused by deforestation, mining activities, and climate change.",
+                        },
+                        {
+                            question: "How can we protect mountain ecosystems?",
+                            answer: "Protection involves sustainable land use practices, conservation efforts, and restoration projects.",
+                        },
+                        {
+                            question: "What are the consequences of ecosystem degradation?",
+                            answer: "Consequences include loss of biodiversity, soil erosion, and disruption of local climate patterns.",
+                        }
+                    ]
+                },
+                {
+                    heading: "Biodiversity Loss",
+                    subheading: "Find out more about biodiversity loss and its impact.",
+                    faqs: [
+                        {
+                            question: "What causes biodiversity loss?",
+                            answer: "Biodiversity loss is caused by habitat destruction, climate change, and overexploitation of resources.",
+                        },
+                        {
+                            question: "How can we prevent biodiversity loss?",
+                            answer: "Preventing biodiversity loss involves protecting natural habitats, promoting sustainable practices, and enforcing conservation laws.",
+                        },
+                        {
+                            question: "What are the effects of biodiversity loss?",
+                            answer: "Effects include decreased ecosystem stability, loss of species, and reduced resilience to environmental changes.",
+                        }
+                    ]
+                },
+                {
+                    heading: "Forest management",
+                    subheading: "Find out more about forest management practices.",
+                    faqs: [
+                        {
+                            question: "What is forest management?",
+                            answer: "Forest management involves planning and implementing practices to maintain and improve forest health and productivity.",
+                        },
+                        {
+                            question: "Why is forest management important?",
+                            answer: "It is important for sustaining biodiversity, preventing deforestation, and ensuring the long-term availability of forest resources.",
+                        },
+                        {
+                            question: "What are the methods of forest management?",
+                            answer: "Methods include selective logging, reforestation, and controlled burns.",
                         }
                     ]
                 }
@@ -86,10 +181,10 @@
             function renderFAQs() {
                 faqSections.forEach(section => {
                     const sectionContainer = document.createElement('div');
-                    sectionContainer.classList.add('bg-white', 'p-8', 'rounded-lg', 'shadow-lg');
-                    
+                    sectionContainer.classList.add('faq-section', 'bg-white', 'p-8', 'rounded-lg', 'shadow-lg');
+
                     const headingElement = document.createElement('div');
-                    headingElement.classList.add('font-frankRuhlLibre', 'xl:text-[50px]', 'lg:text-5xl', 'md:text-4xl', 'text-3xl', 'font-bold', 'xl:leading-[60px]', 'mb-2');
+                    headingElement.classList.add('heading', 'font-frankRuhlLibre', 'xl:text-[50px]', 'lg:text-5xl', 'md:text-4xl', 'text-3xl', 'font-bold', 'xl:leading-[60px]', 'mb-2');
                     headingElement.textContent = section.heading;
 
                     const subheadingElement = document.createElement('div');
