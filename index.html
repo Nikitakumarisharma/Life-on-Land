@@ -6,11 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+
 </head>
 <body class="bg-gray-100">
 
-    <!-- Navbar Placeholder -->
-    <div id="navbar"></div>
+ <!-- Navbar code -->
+ <nav class="bg-blue-500 p-5 text-white">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center px-2">
+            <img src="https://images.fineartamerica.com/images-medium-large-5/life-on-earth-conceptual-image-wieslaw-smetek.jpg" alt="Logo" class="h-10 w-10 rounded-full object-cover">
+            <span class="ml-2 text-xl font-bold">Life On Land</span>
+        </div>
+        <div class="hidden md:flex flex-grow justify-center space-x-16">
+            <a href="index.html" class="hover:underline">Home</a>
+            <a href="about.html" class="hover:underline">About</a>
+            <a href="faq.html" class="hover:underline">FAQ</a>
+            <a href="ngo.html" class="hover:underline">NGO & Communities</a>
+            <a href="contact.html" class="hover:underline">Contact Us</a>
+        </div>
+        <div class="hidden md:flex">
+            <a href="login.html" class="hover:underline">Login</a>
+        </div>
+        <div class="md:hidden flex items-center">
+            <button id="menu-toggle" class="text-3xl">☰</button>
+        </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden">
+        <a href="index.html" class="block py-2 px-4 hover:bg-blue-600">Home</a>
+        <a href="/Ibm Test/Life-on-Land/about/about.html" class="block py-2 px-4 hover:bg-blue-600">About</a>
+        <a href="/Ibm Test/Life-on-Land/faq/faq.html" class="block py-2 px-4 hover:bg-blue-600">FAQ</a>
+        <a href="ngo.html" class="block py-2 px-4 hover:bg-blue-600">NGO & Communities</a>
+        <a href="contact.html" class="block py-2 px-4 hover:bg-blue-600">Contact</a>
+        <a href="login.html" class="block py-2 px-4 hover:bg-blue-600">Login</a>
+    </div>
+</nav>
+
 
     <!-- Main Content -->
     <div class="container mx-auto p-8">
@@ -19,6 +50,12 @@
     </div>
 
     <!-- Load Navbar Script -->
-    <script src="navbar.js"></script>
+    <script>
+        // JavaScript to toggle mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
