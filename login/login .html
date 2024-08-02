@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<nav class="bg-blue-500 p-5 text-white">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center px-2">
+            <img src="https://images.fineartamerica.com/images-medium-large-5/life-on-earth-conceptual-image-wieslaw-smetek.jpg" alt="Logo" class="h-10 w-10 rounded-full object-cover">
+            <span class="ml-2 text-xl font-bold">Life On Land</span>
+        </div>
+        <div class="hidden md:flex flex-grow justify-center space-x-16">
+            <a href="/Life-on-Land/Home/home.page.html" class="hover:underline">Home</a>
+            <a href="/Life-on-Land/about/about.html" class="hover:underline">About</a>
+            <a href="/Life-on-Land/faq/faq.html" class="hover:underline">FAQ</a>
+            <a href="/Life-on-Land/ngo/index.html" class="hover:underline">NGO & Communities</a>
+            <a href="/Life-on-Land/contactUs/folder.html" class="hover:underline">Contact Us</a>
+        </div>
+        <div class="hidden md:flex">
+            <div id="mobile-menu" class="md:hidden">
+                <a href="/Life-on-Land/Home/home.page.html" class="block py-2 px-4 hover:bg-blue-600">Home</a>
+                <a href="/Life-on-Land/about/about.html" class="block py-2 px-4 hover:bg-blue-600">About</a>
+                <a href="/Life-on-Land/faq/faq.html" class="block py-2 px-4 hover:bg-blue-600">FAQ</a>
+                <a href="/Life-on-Land/ngo/index.html" class="block py-2 px-4 hover:bg-blue-600">NGO & Communities</a>
+                <a href="/Life-on-Land/contactUs/folder.html" class="block py-2 px-4 hover:bg-blue-600">Contact</a>
+                <a href="/Life-on-Land/login/login .html" class="block py-2 px-4 hover:bg-blue-600">Login</a>
+            </div>        </div>
+        <div class="md:hidden flex items-center">
+            <button id="menu-toggle" class="text-3xl">☰</button>
+        </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden">
+        <a href="/Life-on-Land/Home/home.page.html" class="block py-2 px-4 hover:bg-blue-600">Home</a>
+        <a href="/Life-on-Land/about/about.html" class="block py-2 px-4 hover:bg-blue-600">About</a>
+        <a href="/Life-on-Land/faq/faq.html" class="block py-2 px-4 hover:bg-blue-600">FAQ</a>
+        <a href="/Life-on-Land/ngo/index.html" class="block py-2 px-4 hover:bg-blue-600">NGO & Communities</a>
+        <a href="/Life-on-Land/contactUs/folder.html" class="block py-2 px-4 hover:bg-blue-600">Contact</a>
+        <a href="/Life-on-Land/login/login .html" class="block py-2 px-4 hover:bg-blue-600">Login</a>
+    </div>
+</nav>
+<body class="font-sans bg-gradient-to-br from-blue-500 to-green-400 m-0">
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="bg-white p-10 rounded-lg shadow-lg w-full max-w-md fade-in">
+            <h3 class="text-gray-800 text-2xl mb-6">Login Here</h3>
+            <form id="login-form">
+                <label for="username" class="block text-gray-600 mb-1">Username</label>
+                <input type="text" id="username" placeholder="Email or Phone" class="w-full p-3 mb-4 border border-gray-300 rounded-lg box-border">
+
+                <label for="password" class="block text-gray-600 mb-1">Password</label>
+                <input type="password" id="password" placeholder="Password" class="w-full p-3 mb-6 border border-gray-300 rounded-lg box-border">
+
+                <button type="submit" class="w-full p-3 bg-green-500 text-white rounded-lg hover:bg-green-600 focus:outline-none">Log In</button>
+                <div class="flex justify-around mt-6">
+                    <div class="bg-red-500 text-white p-4 rounded-lg cursor-pointer hover:bg-red-600">Google</div>
+                    <div class="bg-blue-800 text-white p-4 rounded-lg cursor-pointer hover:bg-blue-900">Facebook</div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        
+        // JavaScript to toggle mobile menu
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+  
+
+</body>
+</html>

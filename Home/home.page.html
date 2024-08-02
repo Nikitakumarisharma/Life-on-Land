@@ -1,115 +1,120 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="home.page.css" >
-        <script src="script.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.page.css">
 
-    </head>
-   <body>
-    
-    <header class="header">
-      <nav >
-        <ul class="list">
-          <li >
-            <a class="item" href="">logo</a>
-          </li>
-          <li>
-            <a href="home.page.html">home</a> </li>
-          <li>
-            <a href="">about</a>
-          </li>
-          <li>
-            <a href="">fnq</a>
-          </li>
-          <li>
-            <a href="">ngo & communities</a>
-          </li>
-          <li>
-            <a href="">contact</a>
-          </li>
-          <li>
-            <a href="login.html"> login</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <title>Home</title>
+</head>
+<body>
+  <nav class="bg-blue-500 p-5 text-white custom-gradient">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center px-2">
+            <img src="https://images.fineartamerica.com/images-medium-large-5/life-on-earth-conceptual-image-wieslaw-smetek.jpg" alt="Logo" class="h-10 w-10 rounded-full object-cover">
+            <span class="ml-2 text-xl font-bold">Life On Land</span>
+        </div>
+        <div class="hidden md:flex flex-grow justify-center space-x-16">
+            <a href="/Life-on-Land/Home/home.page.html" class="hover:underline">Home</a>
+            <a href="/Life-on-Land/about/about.html" class="hover:underline">About</a>
+            <a href="/Life-on-Land/faq/faq.html" class="hover:underline">FAQ</a>
+            <a href="/Life-on-Land/ngo/index.html" class="hover:underline">NGO & Communities</a>
+            <a href="/Life-on-Land/contactUs/folder.html" class="hover:underline">Contact Us</a>
+        </div>
+        <div class="hidden md:flex">
+            <a href="/Life-on-Land/login/login .html" class="hover:underline">Login</a>
+        </div>
+        <div class="md:hidden flex items-center">
+            <button id="menu-toggle" class="text-3xl">☰</button>
+        </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden">
+        <a href="/Life-on-Land/Home/home.page.html" class="block py-2 px-4 hover:bg-blue-600">Home</a>
+        <a href="/Life-on-Land/about/about.html" class="block py-2 px-4 hover:bg-blue-600">About</a>
+        <a href="/Life-on-Land/faq/faq.html" class="block py-2 px-4 hover:bg-blue-600">FAQ</a>
+        <a href="/Life-on-Land/ngo/index.html" class="block py-2 px-4 hover:bg-blue-600">NGO & Communities</a>
+        <a href="/Life-on-Land/contactUs/folder.html" class="block py-2 px-4 hover:bg-blue-600">Contact</a>
+        <a href="/Life-on-Land/login/login .html" class="block py-2 px-4 hover:bg-blue-600">Login</a>
+    </div>
+</nav>
+
+
+<p class="p-10 mt-10  text-blue-800 text-4xl bg-green-300">"Preserving the delicate balance of life on land ensures a thriving planet for all species."</p>
     <div class="detail-about-page">
-      <img class="life-on-land" src="images\background.jpg">
-      <h1>Introduction to Life on Land</h1>
-      <p>
-Life on land encompasses the rich tapestry of ecosystems, species, and natural resources that form the bedrock of our planet's biodiversity. Terrestrial habitats, ranging from the dense, humid rainforests and vast grasslands to the arid deserts and towering mountain ranges, host an incredible variety of life forms. These ecosystems are not only homes to millions of species but also serve as critical components in maintaining ecological balance, supporting human life, and providing essential resources.
-      </p>
-      <p>
-Forests, which cover about 31% of the Earth's land area, are vital in producing oxygen, storing carbon, and regulating climate. They are also home to more than 80% of the terrestrial species of animals, plants, and fungi. Grasslands and savannas, though often underestimated, support a diverse array of wildlife and are crucial for agriculture and pastoralism, which sustain millions of people around the globe.
-      </p>
-      <p>
-Mountains, often called the water towers of the world, provide fresh water to more than half of humanity. Deserts, despite their harsh conditions, harbor unique and resilient life forms adapted to extreme environments. Wetlands, mangroves, and coastal areas serve as buffers against storms and support rich biodiversity while providing livelihoods for countless communities.
-      </p>
-      <p>
-However, these vital ecosystems face unprecedented threats from human activities. Deforestation, habitat fragmentation, pollution, and climate change are driving species to extinction at an alarming rate, undermining the natural systems we depend on. The loss of biodiversity not only threatens the survival of countless species but also impacts human health, food security, and economic stability.
-      </p>
-      <p>
-Preserving and restoring life on land requires a concerted global effort. Sustainable land management, conservation of natural habitats, and restoration of degraded ecosystems are essential strategies to halt biodiversity loss and ensure the long-term health of our planet. By protecting the natural habitats that millions of species call home, we safeguard the ecosystem services they provide, from clean air and water to fertile soil and climate regulation.
-      </p>
-      <p>
-Our commitment to conservation and sustainable practices today will determine the health and prosperity of our planet for future generations. Together, we can protect the vibrant and intricate web of life on land, ensuring a thriving, resilient Earth for all its inhabitants.
-      </p>
+        <img class="life-on-land" src="images/background.jpg" alt="Life on Land">
+        <h1>Introduction to Life on Land</h1>
+        <p>Life on land encompasses the rich tapestry of ecosystems, species, and natural resources that form the bedrock of our planet's biodiversity. Terrestrial habitats, ranging from the dense, humid rainforests and vast grasslands to the arid deserts and towering mountain ranges, host an incredible variety of life forms. These ecosystems are not only homes to millions of species but also serve as critical components in maintaining ecological balance, supporting human life, and providing essential resources.</p>
+        <p>Forests, which cover about 31% of the Earth's land area, are vital in producing oxygen, storing carbon, and regulating climate. They are also home to more than 80% of the terrestrial species of animals, plants, and fungi. Grasslands and savannas, though often underestimated, support a diverse array of wildlife and are crucial for agriculture and pastoralism, which sustain millions of people around the globe.</p>
+        <p>Mountains, often called the water towers of the world, provide fresh water to more than half of humanity. Deserts, despite their harsh conditions, harbor unique and resilient life forms adapted to extreme environments. Wetlands, mangroves, and coastal areas serve as buffers against storms and support rich biodiversity while providing livelihoods for countless communities.</p>
+        <p>However, these vital ecosystems face unprecedented threats from human activities. Deforestation, habitat fragmentation, pollution, and climate change are driving species to extinction at an alarming rate, undermining the natural systems we depend on. The loss of biodiversity not only threatens the survival of countless species but also impacts human health, food security, and economic stability.</p>
+        <p>Preserving and restoring life on land requires a concerted global effort. Sustainable land management, conservation of natural habitats, and restoration of degraded ecosystems are essential strategies to halt biodiversity loss and ensure the long-term health of our planet. By protecting the natural habitats that millions of species call home, we safeguard the ecosystem services they provide, from clean air and water to fertile soil and climate regulation.</p>
+        <p>Our commitment to conservation and sustainable practices today will determine the health and prosperity of our planet for future generations. Together, we can protect the vibrant and intricate web of life on land, ensuring a thriving, resilient Earth for all its inhabitants.</p>
     </div>
+    
     <div class="sub-heading">
-      <hr>
-      Threats to Life on Land
-      <hr>
+        <hr>
+        Threats to Life on Land
+        <hr>
     </div>
+    
     <div class="big-container">
-      <a class="container"  href='combat deforestaion.html'>
-        <div class="image">
-          <img class="img" src="images/combat deforestation.avif" alt="OOPS..!!">
-        </div>
-        <div class="details">
-          <strong>Combating deforestation</strong> requires sustainable forestry practices, reforestation, and afforestation efforts. Legal measures and land use planning protect forests, while empowering local communities and recognizing indigenous rights ensures their involvement in conservation. Economic incentives like payment for ecosystem services and promoting sustainable agriculture reduce deforestation pressures. Corporate responsibility and consumer awareness drive demand for eco-friendly products, and technological advancements aid in monitoring and managing forest resources effectively. Together, these strategies can help preserve and restore vital forest ecosystems.
-        </div>
-      </a>
-      <a class="container" href='landslides.html'>
-        <div class="image">
-          <img class="img" src="images/mitigate-landslide.jpeg" alt="OOPS..!!">
-        </div>
-        <div class="details"><strong>Mitigating landslides</strong> involves several strategies: improving land use planning to avoid high-risk areas, reinforcing slopes with retaining walls and vegetation to stabilize soil, and implementing proper drainage systems to manage water runoff. Monitoring and early warning systems can detect signs of potential landslides, allowing for timely evacuations. Educating communities about landslide risks and preparedness also plays a crucial role in reducing the impact of these natural disasters.
-        </div>
-      </a>
-      <a class="container" href='climate change.html'>
-        <div class="image">
-          <img class="img" src="images/climate changess.png" alt="OOPS..!!">
-        </div>
-        <div class="details">
-          <strong>Mitigating climate change</strong> involves reducing greenhouse gas emissions through the adoption of renewable energy sources like solar and wind, enhancing energy efficiency, and promoting sustainable transportation. Reforestation and afforestation efforts increase carbon sequestration, while improved agricultural practices reduce methane emissions. Supporting international agreements and policies aimed at limiting global warming, alongside increasing public awareness and education about climate change, are crucial steps. Together, these actions can help curb the adverse effects of climate change.
-        </div>
-      </a>
-
-      <a class="container" href='reduce pollution.html'>
-        <div class="image">
-          <img class="img" src="images/pollution.jpeg" alt="OOPS..!!">
-        </div>
-        <div class="details"><strong>Reducing pollution</strong> involves implementing stricter regulations on industrial emissions and promoting cleaner production technologies. Encouraging the use of renewable energy sources and enhancing public transportation reduces air pollution. Recycling and proper waste management help minimize land and water contamination. Promoting sustainable agricultural practices and reducing the use of harmful chemicals also play crucial roles. Public education and awareness campaigns further drive individual and community actions towards reducing pollution.
-        </div>
-      </a>
-      <a class="container" href='protecting mountains.html'>
-        <div class="image">
-          <img class="img" src="images/mountains.jpg" alt="OOPS..!!">
-        </div>
-        <div class="details"><strong>Protecting mountain ecosystems</strong> involves implementing sustainable land use practices and preventing deforestation. Conservation areas and national parks help preserve biodiversity and natural habitats. Promoting sustainable tourism minimizes environmental impact, while reforestation and afforestation efforts restore degraded lands. Supporting local communities in sustainable agriculture and resource management reduces pressure on mountain environments. Monitoring and research enhance understanding of these ecosystems, guiding effective conservation strategies to ensure their health and resilience.
-        </div>
-      </a>
-
-      <a class="container" href='Enhancing biodiversity.html'>
-        <div class="image">
-          <img class="img" src="images/Enhancing biodiversity2.jpg" alt="OOPS..!!">
-        </div>
-        <div class="details"><strong>Enhancing biodiversity</strong> involves protecting natural habitats through the establishment of reserves and conservation areas. Promoting sustainable land use and agricultural practices helps maintain diverse ecosystems. Reforestation and habitat restoration projects restore degraded environments, while combating pollution and invasive species protects native flora and fauna. Supporting policies and legislation that safeguard biodiversity, alongside public education and community involvement, ensures the preservation and enhancement of biodiversity for future generations.
-        </div>
-      </a>
+        <a class="container" href='combat deforestaion.html'>
+            <div class="image">
+                <img class="img" src="images/combat deforestation.avif" alt="Combat Deforestation">
+            </div>
+            <div class="details">
+                <strong>Combating deforestation</strong> requires sustainable forestry practices, reforestation, and afforestation efforts. Legal measures and land use planning protect forests, while empowering local communities and recognizing indigenous rights ensures their involvement in conservation. Economic incentives like payment for ecosystem services and promoting sustainable agriculture reduce deforestation pressures. Corporate responsibility and consumer awareness drive demand for eco-friendly products, and technological advancements aid in monitoring and managing forest resources effectively. Together, these strategies can help preserve and restore vital forest ecosystems.
+            </div>
+        </a>
+        <a class="container" href='landslides.html'>
+            <div class="image">
+                <img class="img" src="images/mitigate-landslide.jpeg" alt="Mitigating Landslides">
+            </div>
+            <div class="details">
+                <strong>Mitigating landslides</strong> involves several strategies: improving land use planning to avoid high-risk areas, reinforcing slopes with retaining walls and vegetation to stabilize soil, and implementing proper drainage systems to manage water runoff. Monitoring and early warning systems can detect signs of potential landslides, allowing for timely evacuations. Educating communities about landslide risks and preparedness also plays a crucial role in reducing the impact of these natural disasters.
+            </div>
+        </a>
+        <a class="container" href='climate change.html'>
+            <div class="image">
+                <img class="img" src="images/climate changess.png" alt="Mitigating Climate Change">
+            </div>
+            <div class="details">
+                <strong>Mitigating climate change</strong> involves reducing greenhouse gas emissions through the adoption of renewable energy sources like solar and wind, enhancing energy efficiency, and promoting sustainable transportation. Reforestation and afforestation efforts increase carbon sequestration, while improved agricultural practices reduce methane emissions. Supporting international agreements and policies aimed at limiting global warming, alongside increasing public awareness and education about climate change, are crucial steps. Together, these actions can help curb the adverse effects of climate change.
+            </div>
+        </a>
+        <a class="container" href='reduce pollution.html'>
+            <div class="image">
+                <img class="img" src="images/pollution.jpeg" alt="Reducing Pollution">
+            </div>
+            <div class="details">
+                <strong>Reducing pollution</strong> involves implementing stricter regulations on industrial emissions and promoting cleaner production technologies. Encouraging the use of renewable energy sources and enhancing public transportation reduces air pollution. Recycling and proper waste management help minimize land and water contamination. Promoting sustainable agricultural practices and reducing the use of harmful chemicals also play crucial roles. Public education and awareness campaigns further drive individual and community actions towards reducing pollution.
+            </div>
+        </a>
+        <a class="container" href='protecting mountains.html'>
+            <div class="image">
+                <img class="img" src="images/mountains.jpg" alt="Protecting Mountain Ecosystems">
+            </div>
+            <div class="details">
+                <strong>Protecting mountain ecosystems</strong> involves implementing sustainable land use practices and preventing deforestation. Conservation areas and national parks help preserve biodiversity and natural habitats. Promoting sustainable tourism minimizes environmental impact, while reforestation and afforestation efforts restore degraded lands. Supporting local communities in sustainable agriculture and resource management reduces pressure on mountain environments. Monitoring and research enhance understanding of these ecosystems, guiding effective conservation strategies to ensure their health and resilience.
+            </div>
+        </a>
+        <a class="container" href='Enhancing biodiversity.html'>
+            <div class="image">
+                <img class="img" src="images/Enhancing biodiversity2.jpg" alt="Enhancing Biodiversity">
+            </div>
+            <div class="details">
+                <strong>Enhancing biodiversity</strong> involves protecting natural habitats through the establishment of reserves and conservation areas. Promoting sustainable land management practices and reducing habitat destruction help preserve ecosystems. Restoring degraded lands and implementing biodiversity-friendly agricultural practices support diverse species. Raising public awareness and engaging communities in conservation efforts foster a collective responsibility towards preserving biodiversity. Supporting research and monitoring programs provides valuable data to guide effective strategies for enhancing and maintaining biodiversity.
+            </div>
+        </a>
     </div>
-    <footer >
-      this is footer
-    </footer>
-   </body>
+    
+    <script>
+      // JavaScript to toggle mobile menu
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+          var mobileMenu = document.getElementById('mobile-menu');
+          mobileMenu.classList.toggle('hidden');
+      });
+  </script>
+</body>
 </html>

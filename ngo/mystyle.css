@@ -1,0 +1,50 @@
+/* Define the fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply fade-in animation to specific elements */
+.inner-section {
+    margin-left: 100px;
+    margin-right: 100px;
+    max-width: 90%;
+    box-shadow: 0 0 11px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+nav.p-5 {
+    padding: 20px !important;
+}
+
+h2 {
+    color: blue;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.picture {
+    max-width: 90%;
+    margin: 30px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.donate {
+    display: block;
+    margin: auto;
+    margin-bottom: 100px;
+    width: 150px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.inner-post {
+    padding: 8%;
+    max-width: 80%;
+    animation: fadeIn 1s ease-in-out;
+}

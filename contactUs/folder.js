@@ -9,7 +9,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     // Basic validation
     if (name && email && message) {
         // Simulate form submission and response
-        document.getElementById('responseMessage').textContent = 'Thank you for contacting us, ' + name + '. We will get back to you shortly!';
+        document.getElementById('responseMessage').textContent = 'Thank you for , ' + name + '. We will get back to you shortly!';
         
         // Optionally, you can send form data to a server here using fetch or XMLHttpRequest
         // Example:
