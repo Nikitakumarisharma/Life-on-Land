@@ -9,7 +9,7 @@
     <title>Home</title>
 </head>
 <body>
-  <nav class="bg-blue-500 p-5 text-white custom-gradient">
+  <nav class="bg-blue-500 p-5 text-white custom-gradient position:fixed;">
     <div class="container mx-auto flex justify-between items-center">
         <div class="flex items-center px-2">
             <img src="https://images.fineartamerica.com/images-medium-large-5/life-on-earth-conceptual-image-wieslaw-smetek.jpg" alt="Logo" class="h-10 w-10 rounded-full object-cover">
@@ -108,6 +108,21 @@
             </div>
         </a>
     </div>
+
+    <!-- Footer -->
+<footer style="background-color: rgb(24, 88, 192); color: white; text-align: center; padding: 10px 0; position:fixed; bottom: 0; width: 100%;">
+    <p>&copy; 2024 Life on Land. All rights reserved.</p>
+    <a href="#" id="back-to-top" style="color: #00bfff; text-decoration: none;">Back to Top</a>
+  </footer>
+  
+  <!-- JavaScript to scroll to top -->
+  <script>
+    document.getElementById('back-to-top').addEventListener('click', function(event) {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+  
     
     <script>
       // JavaScript to toggle mobile menu
